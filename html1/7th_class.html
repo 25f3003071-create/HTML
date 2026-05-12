@@ -1,0 +1,167 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>User Forms - Day 4</h1>
+
+    <hr>
+
+    <!-- ===================== -->
+    <!-- LOGIN FORMS -->
+    <!-- ===================== -->
+    <h2>Login Form</h2>
+    <form action="https://www.flipcart.com/search" method="GET">
+
+        <!-- USERNAME -->
+        <label for="logi_username">Username:</label><br>
+        <input type="text" id="login_username" name="q" placeholder="Enter username" required mainlength="3">
+
+        <br><br>
+
+        <!-- PASSWORD -->
+        <label for="login_password">Password:</label><br>
+        <input type="password" id="login_password" name="password" placeholder="Enter password" required minlength="6">
+        <br><br>
+
+        <!-- SUBMIT BUTTON -->
+
+        <input type="submit">
+
+    </form>
+
+    <hr>
+
+    <!-- ======================== -->
+    <!-- REGISTRATION FORM -->
+    <!-- ========================  -->
+
+    <h2>Registration Form</h2>
+
+    <form action="/register" method="POST">
+
+        <!-- NAME -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="fullname" placeholder="Enter full name" required>
+
+        <br><br>
+
+        <!-- EMAIL -->
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+        <br><br>
+
+        <!-- PASSWORD -->
+        <label for="reg_password">Password:</label><br>
+        <input type="password" id="reg_password" name="password" minlength="6" required>
+        <br><br>
+
+        <!-- DATE -> calender ke form me -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- GENDER (RADIO) -->
+        <p>Gender:</p>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <!-- radio -> multiple option usme se ek select karne ke liye , name same hona , value different hota hai -> isme koi ek select karna hai -->
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <br><br>
+
+        <!-- HOBBIES (CHECKBOX) -->
+        <p>Hobbies:</p>
+
+        <input type="checkbox" id="reading" name="hobby" value="reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="sports" name="hobby" value="sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="music" name="hobby" value="music">
+        <label for="music">Music</label>
+
+        <br><br>
+
+        <!-- DROPDOWN -->
+        <label for="course">Select Course:</label><br>
+
+        <select id="course" name="course">
+
+            <option value="">--Select--</option>
+            <option value="">B.Tech</option>
+            <option value="">BCA</option>
+            <option value="">MCA</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- FILE UPLOAD -->
+        <label for="resume">Upload Resume:</label><br>
+
+        <input type="file" id="resume" name="resume">
+
+        <br><br>
+
+        <!-- TEXTAREA  -->
+        <label for="bio">Short Bio:</label>
+
+        <textarea id="bio" name="bio" rows="4" cols="30" placeholder="Write About yourself..."></textarea>
+
+        <br><br>
+        <!-- SUBMIT -->
+        <input type="submit" value="Register">
+    </form>
+
+    <hr>
+
+    <!-- ============================= -->
+    <!-- FEEDBACK FORM  -->
+    <!-- ============================= -->
+
+    <h2>Feedback Form</h2>
+
+    <form action="/feedback" method="POST">
+
+        <label for="feedback_name">Name:</label>
+        <input type="text id=feedback_name" id="feedback_name" name="name required">
+
+        <br><br>
+
+        <label for="rating">Rating</label><br>
+
+        <select id="rating" name="reating">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+
+    <hr>
+
+    <p>End of Day 4 Forms Pratice</p>
+
+</body>
+
+</html>
