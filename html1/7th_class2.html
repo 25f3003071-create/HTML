@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice</title>
+</head>
+
+<body>
+
+    <!-- Figure & Figcaption -->
+    <section>
+        <h2>Figure & Figcaption</h2>
+
+        <figure>
+            <figcaption>Handsome Nature Image</figcaption>
+
+            <img src="aadil.jpeg" alt="Nature Image" width="400" height="300">
+        </figure>
+    </section>
+
+    <!-- 
+        <details> creates expandable area.
+    -->
+    <section>
+
+        <details>
+            <summary>What is HTML?</summary>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+            </p>
+
+        </details>
+
+    </section>
+
+    <!-- Progress -->
+    <section>
+
+        <h2>Progress Example</h2>
+
+        <p>HTML Course Progress</p>
+        <progress value="70" max="100"></progress>
+
+        <p>Project Upload Progress</p>
+        <progress value="30" max="100"></progress>
+
+    </section>
+
+    <hr>
+
+    <!-- Meter -->
+    <section>
+
+        <h2>Meter Example</h2>
+
+        <p>Battery Level</p>
+        <meter value="0.8">80%</meter>
+
+        <br><br>
+
+        <p>Student Performance</p>
+        <meter value="85" min="0" max="100">
+            85%
+        </meter>
+
+        <br><br>
+
+        <p>Advanced Student Performance</p>
+
+        <meter value="85" min="0" max="100" low="20" high="80" optimum="75">
+        </meter>
+
+    </section>
+
+    <hr>
+
+    <!-- Canvas -->
+    <section>
+
+        <h2>Canvas Example</h2>
+
+        <canvas id="myCanvas" width="300" height="150" style="border:1px solid black;">
+
+            Your browser does not support the canvas element.
+
+        </canvas>
+
+    </section>
+
+    <script>
+
+        const canvas = document.getElementById("myCanvas");
+
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "black";
+
+        ctx.fillRect(50, 30, 150, 80);
+
+    </script>
+
+    <hr>
+
+    <!-- HTML Entities -->
+    <section>
+
+        <h2>HTML Entities</h2>
+
+        <p>Less than symbol: &lt;</p>
+
+        <p>Greater than symbol: &gt;</p>
+
+        <p>Copyright symbol: &copy;</p>
+
+        <p>Trademark symbol: &trade;</p>
+
+        <p>Non-Breaking Space Example:</p>
+
+        <p>Hello&nbsp;&nbsp;&nbsp;World</p>
+
+        <p>Hello----------World</p>
+
+    </section>
+
+    <hr>
+
+    <!-- Special Characters -->
+    <section>
+
+        <h2>Special Characters</h2>
+
+        <p>Currency Symbols</p>
+
+        <ul>
+
+            <li>Dollar: &dollar;</li>
+
+            <li>Pound: &pound;</li>
+
+            <li>Euro: &euro;</li>
+
+            <li>Yen: &yen;</li>
+
+            <li>Rupee: ₹</li>
+
+        </ul>
+
+    </section>
+
+</body>
+
+</html>
